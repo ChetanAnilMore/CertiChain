@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UPLOAD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" >
+    <link rel="stylesheet" href="C:\xampp\htdocs\sih\code\topbottum.css">
+    <link rel="stylesheet" href="C:\xampp\htdocs\sih\code\button.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body{
+          width: 100%;
+          height: 100%;
+          /* Add your background pattern here */
+          background-color: #313131;
+          background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+          background-size: 30px 30px;
+          background-position: -5px -5px;
+          Overflow-x : hidden;
+        }
+        .file-upload-form {
+          width: fit-content;
+          height: fit-content;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .file-upload-label input {
+          display: none;
+        }
+        .file-upload-label svg {
+          height: 50px;
+          fill: rgb(82, 82, 82);
+          margin-bottom: 20px;
+        }
+        .file-upload-label {
+          cursor: pointer;
+          background-color: #ddd;
+          padding: 30px 70px;
+          border-radius: 40px;
+          border: 2px dashed rgb(82, 82, 82);
+          box-shadow: 0px 0px 200px -50px rgba(0, 0, 0, 0.719);
+        }
+        .file-upload-design {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+        }
+        .browse-button {
+          background-color: rgb(82, 82, 82);
+          padding: 5px 15px;
+          border-radius: 10px;
+          color: white;
+          transition: all 0.3s;
+        }
+        .browse-button:hover {
+          background-color: rgb(14, 14, 14);
+        }
+
+    </style>
+  </head>
+  <body>
+  <div class="container">
+    <div class="section1">
+      <div class="header">
+        <div class="logo"> 
+          <img src="C:\xampp\htdocs\sih\photos\logo1.png">
+        </div>
+        <div class="top">
+          <h2>Certichain</h2>
+          <p>E-Certificate Generation, Validation, and Issuance</p>
+        </div>
+        <div class="button-container">
+          <button class="button">
+            <img src="C:\xampp\htdocs\sih\icons\house-fill.svg" viewBox="0 0 1024 1024" stroke-width="0" fill="currentColor" stroke="currentColor" class="icon">
+          </button>
+            <button class="button">
+              <img src="C:\xampp\htdocs\sih\icons\eye-fill.svg" viewBox="0 0 1024 1024" stroke-width="0" fill="currentColor" stroke="currentColor" class="icon">
+            </button>
+            <button class="button">
+              <img src="C:\xampp\htdocs\sih\icons\person-square.svg" viewBox="0 0 1024 1024" stroke-width="0" fill="currentColor" stroke="currentColor" class="icon">
+            </button>
+            <button class="Btn">           
+              <div class="sign">
+              <img src="C:\xampp\htdocs\sih\icons\box-arrow-right.svg">
+            </div>  
+            <div class="text">Logout</div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="section2"><center>
+        <form class="file-upload-form">
+          <label for="file" class="file-upload-label">
+            <div class="file-upload-design">
+              <svg viewBox="0 0 640 512" height="1em">
+                <img src="C:\xampp\htdocs\sih\icons\upload.png" width="70%" alt="Upload icon">
+              </svg>
+              <p>Drag and Drop</p>
+              <p>or</p>
+              <span class="browse-button">Browse file</span>
+            </div>
+            <input id="file" type="file" accept=".pdf" />
+          </label>
+        </form>
+        </center>
+      </div>
+    <div class="footer">
+        <div class="butm">
+          <div class="flogo">
+            <img src="C:\xampp\htdocs\sih\photos\logo1.png" width="120%">
+          </div>
+          <div class="btmlogo">
+            <h2>Certichain</h2>
+            <p>E-Certificate Generation, Validation, and Issuance</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="cont1">
+              <h3>Contact Us</h3><br>
+              <p>Email : certichain29@gmail.com</p>
+              <p>Mobile : +91 8709193759</p>
+              <p>Location : Surat, India</p>
+            </div>
+          </div>
+      <div class="col-md-4">
+        <div class="cont2">
+          <h3>Follow Us</h3>
+          <div class="main">
+            <div class="card">
+              <a class="instagram" href="https://studio.polotno.com/"><img src="C:\xampp\htdocs\sih\icons\insta.png"></a>
+            </div>
+            <div class="card">
+              <a class="instagram" href="#"><img src="C:\xampp\htdocs\sih\icons\insta.png"></a>
+            </div>
+            <div class="card">
+              <a class="instagram" href="#"><img src="C:\xampp\htdocs\sih\icons\fb.png"></a>
+            </div>
+            <div class="card">
+              <a class="instagram" href="#"><img src="C:\xampp\htdocs\sih\icons\tx.png"></a>
+            </div>
+            <div class="card">
+              <a class="instagram" href="#"><img src="C:\xampp\htdocs\sih\icons\sp.png"></a>
+            </div>
+            <div class="card">
+              <a class="instagram" href="#"><img src="C:\xampp\htdocs\sih\icons\insta.png"></a>
+            </div>
+            <div class="card">
+              <a class="instagram" href="#"><img src="C:\xampp\htdocs\sih\icons\yt.png"></a>
+            </div>
+            <div class="card">
+              <a class="instagram" href="#"><img src="C:\xampp\htdocs\sih\icons\wp.png"></a>
+            </div>
+            <div class="card">
+              <a class="instagram" href="#"><img src="C:\xampp\htdocs\sih\icons\insta.png"></a>
+            </div>
+            <p class="text">OUR<br><br>SOCIAL<br><br> MEDIA</p>
+            <div class="main_back"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="cont3">
+          <p>Subscribe to our newsletter and stay updated<br> with the latest news and updates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 20,
+      }); 
+    </script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+    document.querySelector('.nav-links').classList.toggle('active');
+  });
+  </script>
+</html>

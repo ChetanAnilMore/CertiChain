@@ -1,0 +1,299 @@
+
+@media (max-width: 768px) {
+
+/* Adjust styles for smaller screens */
+.container1 {
+    margin: 40px;
+    max-width: 100%;
+}
+
+body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: blur(5px);
+}
+}
+
+@media (max-width: 480px) {
+
+/* Additional media query for screens with a maximum width of 480px */
+    .container1 {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 330px) {
+
+/* Further adjustment for even smaller screens */
+.container1 {
+    padding: 20px;
+    width:max-content;
+    max-width: 150%;
+}
+
+input {
+    width: 95%;
+}
+
+body {
+    overflow-x: hidden;
+    /* Remove horizontal scrolling bar */
+}
+}
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("chain2.jpg");
+            background-size: 100%;
+        }
+
+        .container1 {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            box-shadow: 12px 12px 6px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 400px;
+            padding: 40px;
+            margin: 20px;
+            text-align: center;
+        }
+        .container1 h1{
+            color: whitesmoke;
+        }
+        .create-account p{
+            color: whitesmoke;
+        }
+        .input {
+              color: #fff;
+              font-size: 0.9rem;
+              background-color: transparent;
+              width: 100%;
+              box-sizing: border-box;
+              padding-inline: 0.5em;
+              padding-block: 0.7em;
+              border: none;
+              border-bottom: var(--border-height) solid var(--border-before-color);
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .input-border {
+              position: absolute;
+              background: var(--border-after-color);
+              width: 0%;
+              height: 2px;
+              bottom: 0;
+              left: 0;
+              transition: width 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            }
+
+            .input:focus {
+              outline: none;
+            }
+
+            .input:focus + .input-border {
+              width: 100%;
+            }
+
+            .form-control {
+              position: relative;
+              margin: 15px;
+              --width-of-input: 300px;
+            }
+
+            .input-alt {
+              font-size: 1.2rem;
+              padding-inline: 1em;
+              padding-block: 0.8em;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .input-border-alt {
+              height: 3px;
+              background: linear-gradient(90deg, #FF6464 0%, #FFBF59 50%, #47C9FF 100%);
+              transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1.00);
+            }
+
+            .input-alt:focus + .input-border-alt {
+              width: 100%;
+            }
+            .btn {
+                  display: flex;
+                  margin-left: 95px;
+                  justify-content: center;
+                  align-items: center;
+                  width: 13rem;
+                  overflow: hidden;
+                  height: 3rem;
+                  background-size: 300% 300%;
+                  backdrop-filter: blur(1rem);
+                  border-radius: 5rem;
+                  transition: 0.5s;
+                  animation: gradient_301 5s ease infinite;
+                  border: double 4px transparent;
+                  background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+                  background-origin: border-box;
+                  background-clip: content-box, border-box;
+                }
+
+                #container-stars {
+                  position: absolute;
+                  z-index: -1;
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                  transition: 0.5s;
+                  backdrop-filter: blur(1rem);
+                  border-radius: 5rem;
+                }
+
+                strong {
+                  z-index: 2;
+                  font-family: 'Avalors Personal Use';
+                  font-size: 16px;
+                  letter-spacing: 5px;
+                  color: #FFFFFF;
+                  text-shadow: 0 0 4px white;
+                }
+
+                #glow {
+                  position: absolute;
+                  display: flex;
+                  width: 12rem;
+                }
+
+                .circle {
+                  width: 100%;
+                  height: 30px;
+                  filter: blur(2rem);
+                  animation: pulse_3011 4s infinite;
+                  z-index: -1;
+                }
+
+                .circle:nth-of-type(1) {
+                  background: rgba(254, 83, 186, 0.636);
+                }
+
+                .circle:nth-of-type(2) {
+                  background: rgba(142, 81, 234, 0.704);
+                }
+
+                .btn:hover #container-stars {
+                  z-index: 1;
+                  background-color: #212121;
+                }
+
+                .btn:hover {
+                  transform: scale(1.1)
+                }
+
+                .btn:active {
+                  border: double 4px #FE53BB;
+                  background-origin: border-box;
+                  background-clip: content-box, border-box;
+                  animation: none;
+                }
+
+                .btn:active .circle {
+                  background: #FE53BB;
+                }
+
+                #stars {
+                  position: relative;
+                  background: transparent;
+                  width: 200rem;
+                  height: 200rem;
+                }
+
+                #stars::after {
+                  content: "";
+                  position: absolute;
+                  top: -10rem;
+                  left: -100rem;
+                  width: 100%;
+                  height: 100%;
+                  animation: animStarRotate 90s linear infinite;
+                }
+
+                #stars::after {
+                  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+                  background-size: 50px 50px;
+                }
+
+                #stars::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: -50%;
+                  width: 170%;
+                  height: 500%;
+                  animation: animStar 60s linear infinite;
+                }
+
+                #stars::before {
+                  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+                  background-size: 50px 50px;
+                  opacity: 0.5;
+                }
+
+                @keyframes animStar {
+                  from {
+                    transform: translateY(0);
+                  }
+
+                  to {
+                    transform: translateY(-135rem);
+                  }
+                }
+
+                @keyframes animStarRotate {
+                  from {
+                    transform: rotate(360deg);
+                  }
+
+                  to {
+                    transform: rotate(0);
+                  }
+                }
+
+                @keyframes gradient_301 {
+                  0% {
+                    background-position: 0% 50%;
+                  }
+
+                  50% {
+                    background-position: 100% 50%;
+                  }
+
+                  100% {
+                    background-position: 0% 50%;
+                  }
+                }
+
+                @keyframes pulse_3011 {
+                  0% {
+                    transform: scale(0.75);
+                    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+                  }
+
+                  70% {
+                    transform: scale(1);
+                    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+                  }
+
+                  100% {
+                    transform: scale(0.75);
+                    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                  }
+                }
+
+        @media screen and (max-width: 600px) {
+            .container1 {
+                padding: 20px;
+            }
+        }

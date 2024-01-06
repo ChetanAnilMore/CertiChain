@@ -1,0 +1,62 @@
+/*card css*/
+
+
+.crd {
+  width: 210px;
+  height: 370px;
+  background: rgb(0, 0, 0);
+  border: 3px solid rgb(17, 4, 94);
+  border-radius: 15px;
+  position: relative;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: all 1s ease;
+  color: antiquewhite;
+}
+
+.crd::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 99px;
+  border-radius: 50%;
+  background-color: rgb(17, 4, 94);
+}
+
+.crd__date {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.popup {
+  background-color: #444746;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+  padding: 6px;
+}
+
+.popup .title {
+  font-size: 16px;
+  color: #9cbde2;
+}
+
+.crd__date , .popup {
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.crd:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 10px #289FED;
+}
+
+.crd:hover .crd__date , .crd:hover .popup {
+  opacity: 1;
+}

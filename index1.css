@@ -1,0 +1,155 @@
+body, h1, h2, p, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body{
+  width: 100%;
+  height: 100%;
+  /* Add your background pattern here */
+  background-color: #313131;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+  overflow-x: hidden;
+}
+.row{
+	display: flex;
+}
+.con2{
+	display: flex;
+}
+.lef2{
+	background-color: white;
+	border-radius: 17px;
+	padding-top: 30px;
+	margin: 30px;
+	border-color: black;
+	border: 2px;
+}
+.lef2 h1{
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 290%;
+}
+.lef2 p{
+	margin: 20px;
+	font-size: 135%;
+}
+.sec2{
+	display: flex;
+}
+.icn{
+	margin: 20px 80px 40px 80px;
+}
+.sec1img{
+	margin: 20px 50px 20px 150px;
+}
+.sec3{
+	display: flex;
+	background-color: #CEA0AA;
+	border-radius: 17px;
+	border-color: black;
+	border: 2px;
+	margin: 250px 0px;
+}
+.lef3 h1{
+	text-align: center;
+	margin-top: 40px;
+}
+.lef3 img{
+	margin: 20px 30px 30px 140px;
+}
+.rig p{
+	font-size: 162%;
+	margin: 50px 30px 50px 0px;
+}
+.sec4{
+	display: flex;
+	background-color: white;
+	margin: 200px 0px;
+	padding: 50px;
+	border-radius: 17px;
+	border-color: black;
+	border: 2px;
+}
+.sec5{
+	display: flex;
+	background-color: #B8D8E3;
+	margin: 200px 0px;
+	padding: 50px;
+	border-radius: 17px;
+	border-color: black;
+	border: 2px;
+}
+.sec5 p{
+	font-size: 160%;
+}
+.sec5 h1{
+	font-size: 300%;
+	margin-bottom: 20px;
+}
+.section6{
+	color: white;
+	margin: 350px 0px;
+}
+/*card css*/
+.crd {
+  width: 210px;
+  height: 370px;
+  background: rgb(0, 0, 0);
+  border: 3px solid rgb(17, 4, 94);
+  border-radius: 15px;
+  position: relative;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: all 1s ease;
+  color: antiquewhite;
+}
+
+.crd::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 99px;
+  border-radius: 50%;
+  background-color: rgb(17, 4, 94);
+}
+
+.crd__date {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.popup {
+  background-color: #444746;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  font-size: .75em;
+  padding: 6px;
+}
+
+.popup .title {
+  font-size: 16px;
+  color: #9cbde2;
+}
+
+.crd__date , .popup {
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.crd:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 10px #289FED;
+}
+
+.crd:hover .crd__date , .crd:hover .popup {
+  opacity: 1;
+}
