@@ -5,7 +5,7 @@ Makers :-
 <br>
 1. Amrit Lodh <br>
 2. Chetan More <br>
-3. Devam Patel <br>
+3. Devam Gandhi <br>
 4. Vrunda Thakkar <br>
 5. Meet Moliya <br>
 6. Kevin Patel <br>
